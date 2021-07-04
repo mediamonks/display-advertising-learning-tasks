@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
         let duration = 1.5;
         const tl = gsap.timeline();
 
-        //strength between 0 and 1
         CustomBounce.create("footballBounce", {strength: 0.7, squash: 3});
         tl.to("#football",  {duration, y: 335, ease:"footballBounce"})
           .to("#football", { duration, scaleY: 0.5, scaleX: 1.3, ease: "footballBounce-squash", transformOrigin: "bottom" }, 0)
