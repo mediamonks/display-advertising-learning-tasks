@@ -4,7 +4,8 @@
   "description": "Display advertising animation task 01",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "./node_modules/.bin/henk"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,9 @@
     "sass": "^1.35.1"
   },
   "dependencies": {
+    "@mediamonks/henk": "^1.4.4",
+    "@mediamonks/richmedia-temple-server": "^7.1.0",
+    "@mediamonks/temple": "^5.0.13",
     "gsap": "file:gsap-bonus.tgz"
   }
 }
