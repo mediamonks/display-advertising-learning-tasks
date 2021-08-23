@@ -1,5 +1,7 @@
+import MotionPathPlugin from './scripts/MotionPathPlugin';
+// import MotionPathHelper from './scripts/MotionPathHelper';
 
-gsap.registerPlugin(CustomEase, CustomBounce, MorphSVGPlugin);
+gsap.registerPlugin(CustomEase, CustomBounce, MotionPathPlugin);
 
 document.addEventListener("DOMContentLoaded", function() {
   
@@ -67,13 +69,29 @@ document.addEventListener("DOMContentLoaded", function() {
         ease: Power1.easeInOut
       }, "bounce3-=0.04")
       .to(".ball_shape", {
-            x: 580,
+            x: 590,
           force3D: true,
           rotation: "+=360",
         repeat: 1.00125,
           yoyo: false,
           ease: Power0.easeNone
-          }, "bounce")
+      }, "bounce")
+        
+        
+      tl.to(".ball_shape", {
+  duration: 5, 
+  ease: "power1.inOut",
+  immediateRender: true,
+  motionPath: {
+    path: "#motionPath",
+    align: "#motionPath",
+    alignOrigin: [0.5, 0.5],
+    autoRotate: 90
+  }
+});
+
+MotionPathHelper.create(".ball_shape");
+
 
      
         

@@ -35,3 +35,12 @@ svg {
 video {
   opacity: 0.2;
 }
+
+.guide {
+  position: absolute;
+  top: 5px;
+  left: 92px;
+  opacity: 0.5;
+  height: 30%;
+  width: 641px;
+}
