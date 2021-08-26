@@ -1,0 +1,33 @@
+{
+  "name": "frankie-bouncing-ball-animation",
+  "version": "1.0.0",
+  "description": "Display advertising animation task 01",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "./node_modules/.bin/henk",
+    "start": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mediamonks/display-advertising-learning-tasks.git"
+  },
+  "keywords": [
+    "Animation",
+    "GSAP",
+    "Display",
+    "Advertising"
+  ],
+  "author": "Frankie Bukenya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mediamonks/display-advertising-learning-tasks/issues"
+  },
+  "homepage": "https://github.com/mediamonks/display-advertising-learning-tasks#readme",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "@mediamonks/henk": "^1.5.4"
+  }
+}
