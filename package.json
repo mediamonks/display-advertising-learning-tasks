@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preview": "./node_modules/.bin/henk",
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "start": "parcel ./src/index.html"
   },
   "repository": {
     "type": "git",
@@ -29,9 +28,6 @@
     "sass": "^1.35.1"
   },
   "dependencies": {
-    "@mediamonks/henk": "^1.4.4",
-    "@mediamonks/richmedia-temple-server": "^7.1.0",
-    "@mediamonks/temple": "^5.0.13",
-    "gsap": "file:gsap-bonus.tgz"
+    "@mediamonks/henk": "^1.5.4"
   }
 }
